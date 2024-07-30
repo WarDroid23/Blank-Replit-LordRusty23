@@ -10,9 +10,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ahmed": "^1.1.0",
+    "bitandbang": "^4.0.1",
+    "eswat2": "^2.1.203",
+    "get-node": "^15.0.1",
+    "kethinov": "^1.0.5",
     "kimmohito-card": "^3.0.5",
     "libnpmexec": "^8.1.3",
+    "node-version-alias": "^5.0.0",
     "npx-cache-control": "^1.4.2",
-    "npx-import": "^1.1.4"
+    "npx-import": "^1.1.4",
+    "nvexeca": "^11.0.1",
+    "published": "^1.9.1"
   }
 }
