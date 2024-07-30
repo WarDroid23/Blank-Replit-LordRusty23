@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.postgresql
     pkgs.google-cloud-sdk
     pkgs.google-cloud-sdk-gce
     pkgs.python312Packages.python-etcd
