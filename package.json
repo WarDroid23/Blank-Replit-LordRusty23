@@ -1,0 +1,18 @@
+{
+  "name": "blank-replit-lordrusty23",
+  "version": "1.0.0",
+  "description": "Every new repl comes with a `.replit` and a `replit.nix` file that let you configure your repl to do just about anything in any language!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kimmohito-card": "^3.0.5",
+    "libnpmexec": "^8.1.3",
+    "npx-cache-control": "^1.4.2",
+    "npx-import": "^1.1.4"
+  }
+}
