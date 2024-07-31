@@ -1,5 +1,52 @@
 { pkgs }: {
   deps = [
+    pkgs.vimPlugins.neoinclude-vim
+    pkgs.linuxPackages_4_19_hardened.new-lg4ff
+    pkgs.vimPlugins.neotest-dart
+    pkgs.haskellPackages.newline
+    pkgs.or1k-newlib
+    pkgs.python312Packages.nexia
+    pkgs.luajitPackages.neotest
+    pkgs.newt
+    pkgs.haskellPackages.neononempty
+    pkgs.haskellPackages.needle
+    pkgs.linuxPackages-libre.new-lg4ff
+    pkgs.neovide
+    pkgs.nest
+    pkgs.linuxPackages_6_1_hardened.new-lg4ff
+    pkgs.nerdctl
+    pkgs.nexuiz
+    pkgs.ne
+    pkgs.netassert
+    pkgs.sbclPackages.net_dot_didierverna_dot_declt_dot_setup
+    pkgs.haskellPackages.network-multicast
+    pkgs.linuxPackages_6_1_hardened.netatop
+    pkgs.haskellPackages.network-simple-ws
+    pkgs.azure-cli-extensions.networkcloud
+    pkgs.haskellPackages.network-ip
+    pkgs.haskellPackages.netlib-carray
+    pkgs.networkaudiod
+    pkgs.haskellPackages.network-byte-order
+    pkgs.linuxPackages_5_10_hardened.netatop
+    pkgs.sbclPackages.network-addresses
+    pkgs.haskellPackages.netlink
+    pkgs.sbclPackages.net_dot_didierverna_dot_focus_dot_demos_dot_quotation
+    pkgs.haskellPackages.net-spider-rpl
+    pkgs.python311Packages.nethsm
+    pkgs.haskellPackages.network_3_2_0_0
+    pkgs.python312Packages.netcdf4
+    pkgs.haskellPackages.net-spider-cli
+    pkgs.haskellPackages.network-uri-json
+    pkgs.linuxPackages.netatop
+    pkgs.haskellPackages.network-house
+    pkgs.haskellPackages.network-pgi
+    pkgs.netmaker-full
+    pkgs.haskellPackages.network-dbus
+    pkgs.sbclPackages.net_dot_didierverna_dot_focus_dot_setup
+    pkgs.unixtools.netstat
+    pkgs.haskellPackages.network-transport-zeromq
+    pkgs.python312Packages.netdata
+    pkgs.haskellPackages.net-mqtt
     pkgs.postgresql
     pkgs.google-cloud-sdk
     pkgs.google-cloud-sdk-gce
