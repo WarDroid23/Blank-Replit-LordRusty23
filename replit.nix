@@ -1,5 +1,35 @@
 { pkgs }: {
   deps = [
+    pkgs.haskellPackages.websockets_0_13_0_0
+    pkgs.python311Packages.webexteamssdk
+    pkgs.nodePackages.webpack
+    pkgs.nodePackages.webpack-cli
+    pkgs.python312Packages.weboob
+    pkgs.haskellPackages.webkitgtk3-javascriptcore
+    pkgs.haskellPackages.webrtc-vad
+    pkgs.web-eid-app
+    pkgs.haskellPackages.web-routes-transformers
+    pkgs.haskellPackages.webgear-core
+    pkgs.haskellPackages.web3-crypto
+    pkgs.haskellPackages.web-css
+    pkgs.haskellPackages.websnap
+    pkgs.haskellPackages.webgear-openapi
+    pkgs.python311Packages.webob
+    pkgs.haskellPackages.web-routes-happstack
+    pkgs.python311Packages.webrtc-noise-gain
+    pkgs.python311Packages.websockets
+    pkgs.haskellPackages.webapp
+    pkgs.python311Packages.webassets
+    pkgs.vimPlugins.webapi-vim
+    pkgs.haskellPackages.websockets
+    pkgs.haskellPackages.web-routes-generics
+    pkgs.webtorrent_desktop
+    pkgs.python311Packages.webtest
+    pkgs.haskellPackages.websockets-json
+    pkgs.haskellPackages.web3-polkadot
+    pkgs.python312Packages.webrtcvad
+    pkgs.emacsPackages.web
+    pkgs.texlivePackages.web
     pkgs.vimPlugins.neoinclude-vim
     pkgs.linuxPackages_4_19_hardened.new-lg4ff
     pkgs.vimPlugins.neotest-dart
