@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "blank-replit-lordrusty23"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "blank_replit_lordrusty23"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+p = "1.4.0"
+p5p5 = "5.0.1"
+p4p = "4.1.12"
+p22p = "0.4.2"
+p2p = "1.4.5"
+p4 = "0.1.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
