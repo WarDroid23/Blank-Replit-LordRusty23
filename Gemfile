@@ -29,3 +29,5 @@ gem "ruby-vips", "= 2.2.2"
 gem "ruby-ole", "= 1.2.13.1"
 
 gem "ruby-kafka", "= 1.5.0"
+
+gem "ruby-prof", "= 1.7.0"

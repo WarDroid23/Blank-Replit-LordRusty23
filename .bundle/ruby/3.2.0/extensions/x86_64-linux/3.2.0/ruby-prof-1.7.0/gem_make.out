@@ -1,0 +1,30 @@
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.2.0/gems/ruby-prof-1.7.0/ext/ruby_prof
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.2.0/gems/ruby-prof-1.7.0/ext/ruby_prof
+make DESTDIR\= sitearchdir\=./.gem.20240804-24366-qc9gpp sitelibdir\=./.gem.20240804-24366-qc9gpp clean
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.2.0/gems/ruby-prof-1.7.0/ext/ruby_prof
+make DESTDIR\= sitearchdir\=./.gem.20240804-24366-qc9gpp sitelibdir\=./.gem.20240804-24366-qc9gpp
+compiling rp_allocation.c
+compiling rp_call_tree.c
+compiling rp_call_trees.c
+compiling rp_measure_allocations.c
+compiling rp_measure_memory.c
+compiling rp_measure_process_time.c
+compiling rp_measure_wall_time.c
+compiling rp_measurement.c
+compiling rp_method.c
+compiling rp_profile.c
+compiling rp_stack.c
+compiling rp_thread.c
+compiling ruby_prof.c
+linking shared-object ruby_prof.so
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.2.0/gems/ruby-prof-1.7.0/ext/ruby_prof
+make DESTDIR\= sitearchdir\=./.gem.20240804-24366-qc9gpp sitelibdir\=./.gem.20240804-24366-qc9gpp install
+install -c -p -m 755 ruby_prof.so ./.gem.20240804-24366-qc9gpp
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.2.0/gems/ruby-prof-1.7.0/ext/ruby_prof
+make DESTDIR\= sitearchdir\=./.gem.20240804-24366-qc9gpp sitelibdir\=./.gem.20240804-24366-qc9gpp clean
