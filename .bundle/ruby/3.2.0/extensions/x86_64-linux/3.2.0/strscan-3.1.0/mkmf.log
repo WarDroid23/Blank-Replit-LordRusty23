@@ -1,0 +1,119 @@
+have_func: checking for onig_region_memsize() in ruby.h... -------------------- yes
+
+LD_LIBRARY_PATH=.:/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib "gcc -o conftest -I/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/x86_64-linux -I/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/backward -I/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0 -I.    -O3 -fPIC conftest.c  -L. -L/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -Wl,-rpath,/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -L/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -lruby-3.2.2  -lm -lpthread  -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+LD_LIBRARY_PATH=.:/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib "gcc -o conftest -I/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/x86_64-linux -I/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/backward -I/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0 -I.    -O3 -fPIC conftest.c  -L. -L/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -Wl,-rpath,/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -L/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -lruby-3.2.2  -lm -lpthread  -lc"
+conftest.c: In function ‘t’:
+conftest.c:16:57: error: ‘onig_region_memsize’ undeclared (first use in this function)
+   16 | int t(void) { void ((*volatile p)()); p = (void ((*)()))onig_region_memsize; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~
+conftest.c:16:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))onig_region_memsize; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib "gcc -o conftest -I/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/x86_64-linux -I/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/backward -I/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0 -I.    -O3 -fPIC conftest.c  -L. -L/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -Wl,-rpath,/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -L/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -lruby-3.2.2  -lm -lpthread  -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: extern void onig_region_memsize();
+17: int t(void) { onig_region_memsize(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_reg_onig_match() in ruby.h... -------------------- no
+
+LD_LIBRARY_PATH=.:/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib "gcc -o conftest -I/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/x86_64-linux -I/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/backward -I/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0 -I.    -O3 -fPIC conftest.c  -L. -L/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -Wl,-rpath,/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -L/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -lruby-3.2.2  -lm -lpthread  -lc"
+conftest.c: In function ‘t’:
+conftest.c:16:57: error: ‘rb_reg_onig_match’ undeclared (first use in this function); did you mean ‘rb_reg_nth_match’?
+   16 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_reg_onig_match; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~
+      |                                                         rb_reg_nth_match
+conftest.c:16:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_reg_onig_match; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib "gcc -o conftest -I/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/x86_64-linux -I/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/backward -I/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0 -I.    -O3 -fPIC conftest.c  -L. -L/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -Wl,-rpath,/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -L/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/lib -lruby-3.2.2  -lm -lpthread  -lc"
+/nix/store/p58l5qmzifl20qmjs3xfpl01f0mqlza2-binutils-2.40/bin/ld: /tmp/ccmFgxw5.o: in function `t':
+conftest.c:(.text+0x7): undefined reference to `rb_reg_onig_match'
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: extern void rb_reg_onig_match();
+17: int t(void) { rb_reg_onig_match(); return 0; }
+/* end */
+
+--------------------
+

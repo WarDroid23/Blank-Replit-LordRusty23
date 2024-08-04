@@ -1,0 +1,18 @@
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+/nix/store/c4bdx4dja3h06xg1ksv3f51alp5a44li-ruby-3.1.5/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240804-8159-riaprk sitelibdir\=./.gem.20240804-8159-riaprk clean
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240804-8159-riaprk sitelibdir\=./.gem.20240804-8159-riaprk
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240804-8159-riaprk sitelibdir\=./.gem.20240804-8159-riaprk install
+install -c -p -m 755 cparse.so ./.gem.20240804-8159-riaprk/racc
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240804-8159-riaprk sitelibdir\=./.gem.20240804-8159-riaprk clean

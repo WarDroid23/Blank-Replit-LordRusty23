@@ -1,0 +1,30 @@
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.2.0/gems/yajl-ruby-1.4.3/ext/yajl
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.2.0/gems/yajl-ruby-1.4.3/ext/yajl
+make DESTDIR\= sitearchdir\=./.gem.20240804-13045-fig870 sitelibdir\=./.gem.20240804-13045-fig870 clean
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.2.0/gems/yajl-ruby-1.4.3/ext/yajl
+make DESTDIR\= sitearchdir\=./.gem.20240804-13045-fig870 sitelibdir\=./.gem.20240804-13045-fig870
+compiling yajl.c
+compiling yajl_alloc.c
+compiling yajl_buf.c
+compiling yajl_encode.c
+compiling yajl_ext.c
+yajl_ext.c: In function ‘rb_yajl_parser_parse’:
+yajl_ext.c:538:17: warning: variable ‘stat’ set but not used [-Wunused-but-set-variable]
+  538 |     yajl_status stat;
+      |                 ^~~~
+compiling yajl_gen.c
+compiling yajl_lex.c
+compiling yajl_parser.c
+compiling yajl_version.c
+linking shared-object yajl/yajl.so
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.2.0/gems/yajl-ruby-1.4.3/ext/yajl
+make DESTDIR\= sitearchdir\=./.gem.20240804-13045-fig870 sitelibdir\=./.gem.20240804-13045-fig870 install
+install -c -p -m 755 yajl.so ./.gem.20240804-13045-fig870/yajl
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.2.0/gems/yajl-ruby-1.4.3/ext/yajl
+make DESTDIR\= sitearchdir\=./.gem.20240804-13045-fig870 sitelibdir\=./.gem.20240804-13045-fig870 clean

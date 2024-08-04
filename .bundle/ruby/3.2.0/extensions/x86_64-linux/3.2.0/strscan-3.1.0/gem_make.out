@@ -1,0 +1,20 @@
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.2.0/gems/strscan-3.1.0/ext/strscan
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/bin/ruby extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+checking for rb_reg_onig_match() in ruby.h... no
+creating Makefile
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.2.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240804-13045-qhgl5t sitelibdir\=./.gem.20240804-13045-qhgl5t clean
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.2.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240804-13045-qhgl5t sitelibdir\=./.gem.20240804-13045-qhgl5t
+compiling strscan.c
+linking shared-object strscan.so
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.2.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240804-13045-qhgl5t sitelibdir\=./.gem.20240804-13045-qhgl5t install
+install -c -p -m 755 strscan.so ./.gem.20240804-13045-qhgl5t
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.2.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240804-13045-qhgl5t sitelibdir\=./.gem.20240804-13045-qhgl5t clean
