@@ -1,5 +1,0 @@
-source 'https://rubygems.org'
-source <%= PrivateGem.server.inspect %>
-
-# Specify your gem's dependencies in <%= config[:name] %>.gemspec
-gemspec
