@@ -1,0 +1,10 @@
+crypto_shorthash/siphash24/libsodium_la-shorthash_siphash24.lo: \
+ crypto_shorthash/siphash24/shorthash_siphash24.c \
+ /nix/store/lcxvgkg659vbvdq86mhxa599wn48f35c-glibc-2.40-36-dev/include/stdc-predef.h \
+ include/sodium/crypto_shorthash_siphash24.h \
+ /nix/store/62qjb50708fdhb4f2y7zxyqr1afir4fk-gcc-13.3.0/lib/gcc/x86_64-unknown-linux-gnu/13.3.0/include/stddef.h \
+ include/sodium/export.h
+/nix/store/lcxvgkg659vbvdq86mhxa599wn48f35c-glibc-2.40-36-dev/include/stdc-predef.h:
+include/sodium/crypto_shorthash_siphash24.h:
+/nix/store/62qjb50708fdhb4f2y7zxyqr1afir4fk-gcc-13.3.0/lib/gcc/x86_64-unknown-linux-gnu/13.3.0/include/stddef.h:
+include/sodium/export.h:

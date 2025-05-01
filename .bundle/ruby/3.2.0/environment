@@ -1,0 +1,3 @@
+export PATH="/nix/store/1svz5jd3d8h807gh18rsn0azljp6nad7-google-cloud-sdk-501.0.0/bin:/nix/store/8xs6a2mh8vhb0r5ds4wh5nm6a59x66z6-php-with-extensions-8.2.23/bin:$PATH"
+export GEM_PATH="/home/runner/workspace/.bundle/ruby/3.2.0"
+export GEM_HOME="/home/runner/workspace/.bundle/ruby/3.2.0"

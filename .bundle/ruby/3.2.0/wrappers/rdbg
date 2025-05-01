@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+if
+  [[ -s "/home/runner/workspace/.bundle/ruby/3.2.0/environment" ]]
+then
+  source "/home/runner/workspace/.bundle/ruby/3.2.0/environment"
+  exec rdbg "$@"
+else
+  echo "ERROR: Missing RVM environment file: '/home/runner/workspace/.bundle/ruby/3.2.0/environment'" >&2
+  exit 1
+fi
