@@ -1,0 +1,35 @@
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.1.0/gems/gem-wrappers-1.4.0/ext/wrapper_generator
+/nix/store/c4bdx4dja3h06xg1ksv3f51alp5a44li-ruby-3.1.5/bin/ruby extconf.rb
+GemWrappers: Can not wrap missing file: analytics
+GemWrappers: Can not wrap missing file: annotate-gem
+GemWrappers: Can not wrap missing file: annotate_gem
+GemWrappers: Can not wrap missing file: gpgen
+GemWrappers: Can not wrap missing file: nokogiri
+GemWrappers: Can not wrap missing file: oauth
+GemWrappers: Can not wrap missing file: private_gem
+GemWrappers: Can not wrap missing file: dot2ruby
+GemWrappers: Can not wrap missing file: gem2gv
+GemWrappers: Can not wrap missing file: git2gv
+GemWrappers: Can not wrap missing file: ruby2gv
+GemWrappers: Can not wrap missing file: xml2gv
+GemWrappers: Can not wrap missing file: ruby-prof
+GemWrappers: Can not wrap missing file: ruby-prof-check-trace
+GemWrappers: Can not wrap missing file: ruby_parse
+GemWrappers: Can not wrap missing file: ruby_parse_extract_error
+GemWrappers: Can not wrap missing file: thor
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.1.0/gems/gem-wrappers-1.4.0/ext/wrapper_generator
+make DESTDIR\= sitearchdir\=./.gem.20240804-34373-y0fsm5 sitelibdir\=./.gem.20240804-34373-y0fsm5 clean
+make: *** No rule to make target 'clean'.  Stop.
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.1.0/gems/gem-wrappers-1.4.0/ext/wrapper_generator
+make DESTDIR\= sitearchdir\=./.gem.20240804-34373-y0fsm5 sitelibdir\=./.gem.20240804-34373-y0fsm5
+make: Nothing to be done for 'all'.
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.1.0/gems/gem-wrappers-1.4.0/ext/wrapper_generator
+make DESTDIR\= sitearchdir\=./.gem.20240804-34373-y0fsm5 sitelibdir\=./.gem.20240804-34373-y0fsm5 install
+make: Nothing to be done for 'install'.
+
+current directory: /home/runner/Blank-Replit-LordRusty23/.bundle/ruby/3.1.0/gems/gem-wrappers-1.4.0/ext/wrapper_generator
+make DESTDIR\= sitearchdir\=./.gem.20240804-34373-y0fsm5 sitelibdir\=./.gem.20240804-34373-y0fsm5 clean
+make: *** No rule to make target 'clean'.  Stop.

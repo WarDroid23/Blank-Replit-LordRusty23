@@ -1,0 +1,10 @@
+crypto_core/hsalsa20/libsodium_la-core_hsalsa20.lo: \
+ crypto_core/hsalsa20/core_hsalsa20.c \
+ /nix/store/x8lqlydsxbrwvf6p7v18gws8kn1xl37f-glibc-2.38-23-dev/include/stdc-predef.h \
+ include/sodium/crypto_core_hsalsa20.h \
+ /nix/store/0b9bsznqs6pdg42dxcwvrlmarjn2p6a1-gcc-12.3.0/lib/gcc/x86_64-unknown-linux-gnu/12.3.0/include/stddef.h \
+ include/sodium/export.h
+/nix/store/x8lqlydsxbrwvf6p7v18gws8kn1xl37f-glibc-2.38-23-dev/include/stdc-predef.h:
+include/sodium/crypto_core_hsalsa20.h:
+/nix/store/0b9bsznqs6pdg42dxcwvrlmarjn2p6a1-gcc-12.3.0/lib/gcc/x86_64-unknown-linux-gnu/12.3.0/include/stddef.h:
+include/sodium/export.h:
